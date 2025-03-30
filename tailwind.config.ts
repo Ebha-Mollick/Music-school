@@ -75,4 +75,8 @@ const config: Config = {
   },
   plugins: [addVariablesForColors],
 };
+module.exports = {
+  plugins: [require('tailwind-scrollbar-hide')],
+};
+
 export default config;
