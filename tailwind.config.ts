@@ -78,5 +78,21 @@ const config: Config = {
 module.exports = {
   plugins: [require('tailwind-scrollbar-hide')],
 };
+module.exports = {
+  theme: {
+    extend: {
+      keyframes: {
+        meteorFall: {
+          "0%": { transform: "translateY(0) translateX(0)", opacity: "1" },
+          "100%": { transform: "translateY(100vh) translateX(50vw)", opacity: "0" },
+        },
+      },
+      animation: {
+        meteor: "meteorFall linear infinite",
+      },
+    },
+  },
+  plugins: [],
+};
 
 export default config;
